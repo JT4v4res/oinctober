@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://cdn.shopify.com/s/files/1/0305/4075/9177/products/papel-de-parede-adesivo-porquinho-rosa-n04042-436155_grande.jpg?v=1643327230');
+}
+
+.container {
+  max-width: 75%;
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem;
+  flex: 1 0 auto;
+  text-align: center;
+  height: 100%;
+}
+
+article h1 {
+  margin: 1rem 0;
+}
+
+.navigation {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0rem;
+  background-color: rgba(194, 120, 120, 0.7);
+  color: black;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  -moz-backdrop-filter: blur(8px);
+}
+
+#root {
+  display: flex;
+}
+
+.brand {
+  text-decoration: none;
+  color: black;
+  font-size: 2.3rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.brand-text {
+  text-decoration: none;
+  color: black;
+  font-size: 2.3rem;
+  margin-left: 1.5%;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-menu {
+  margin-left: 40%;
+  top: 0;
+}
+
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+  margin-left: 10%;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.hamburger:hover {
+  background-color: #2642af;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: rgba(194, 120, 120, 1);
+    border-top: 1px solid black;
+  }
+
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+
+  .navigation-menu li a {
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  .navigation-menu li:hover {
+    background-color: #eee;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+}
+
+.footer {
+  background-color: rgba(194, 120, 120, 0.7);
+  padding: 1.5em;
+  text-align: center;
+  position: flex;
+  flex-shrink: 0;
+  left:  0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  -moz-backdrop-filter: blur(8px);
+}
+
+.social_list {
+  display: inline;
+  list-style-type: none;
+}
+
+.social_list li {
+  margin: 0 1em;
+}
+
+.social_list li:hover {
+  color: #2642af;
+}
+
+.social_list svg {
+  font-size: 1.5em;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.copy_right {
+  margin-top: 2em;
+}
+
+.copy_right span {
+  font-weight: bold;
+}
+
+.social_media {
+  display: inline-flex;
+}
+
+.social_media a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social_media h4 {
+  margin-bottom: 1em;
+}
+
+.developer_media {
+  display: inline-flex;
+  margin-left: 5%;
+}
+
+.developer_media a {
+  text-decoration: none;
+  color: inherit;
+  float: left;
+}
+
+.developer_media h4 {
+  margin-bottom: 1em;
+}
+
+.oinc_brand {
+  width: 60px;
+  height: 60px;
+}
+
+.main {
+  flex: 1;
+}
+
+.login {
+  background-color: rgba(194, 120, 120, 0.7);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+  padding: 1rem;
+  flex: 1 0 auto;
+  text-align: center;
+  margin-top: 3%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.login h1 {
+  text-align: center;
+  margin-bottom: 5%;
+  color: #F9F2F3;
+  text-shadow: -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+.login-input {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.login-input form button {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: #f76b84;
+  padding: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  font-size: 20px;
+}
+
+.login-input form button:hover {
+  background-color: rgba(194, 120, 120);
+  cursor: pointer;
+}
+
+.login-input a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.login-input a p{
+  margin-bottom: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.fieldset-border {
+  border: 1px groove #ddd !important;
+  padding: 0 1.4em 1.4em 1,4em !important;
+  border-radius: 10px 10px 10px 10px;
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  border: 3px solid black;
+}
+
+.fieldset-border .legend-border {
+  font-size: 1.2em !important;
+  text-align: left !important;
+  margin-left: 3%;
+  width: auto;
+  padding: 0 10px;
+}
+
+.fieldset-border input {
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  padding: 5%;
+  top: 0;
+  outline: none;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .login {
+    background-color: rgba(194, 120, 120, 0.7);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+    padding: 1rem;
+    flex: 1 0 auto;
+    text-align: center;
+    margin-top: 7.5%;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .login h1 {
+    text-align: center;
+    margin-bottom: 5%;
+    color: #F9F2F3;
+    text-shadow: -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+  
+  .login-input {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .login-input form button {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: #f76b84;
+    padding: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    font-size: 20px;
+  }
+  
+  .login-input form button:hover {
+    background-color: rgba(194, 120, 120);
+    cursor: pointer;
+  }
+  
+  .login-input a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .login-input a p{
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  .fieldset-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1,4em !important;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    border: 3px solid black;
+  }
+  
+  .fieldset-border .legend-border {
+    font-size: 1.2em !important;
+    text-align: left !important;
+    margin-left: 3%;
+    width: auto;
+    padding: 0 10px;
+  }
+  
+  .fieldset-border input {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    padding: 5%;
+    top: 0;
+    outline: none;
+    font-size: 20px;
+  }
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
